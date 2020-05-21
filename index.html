@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "utf-8" />
+    <title> Főoldal </title>
+    <link rel="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="nav">
+
+            <div class="baloldal">
+                <div class="nav-link active-nav-link">
+                    <a href="index.html">Főoldal</a>
+                </div>
+                <div class="nav-link">
+                    <a href="about.html">Rólam</a>
+                </div>
+                <div class="nav-link">
+                    <a href="projects.html">Projektek</a>
+                </div>
+                <div class="nav-link">
+                    <a href="goodbye.html">Viszlát!</a>
+                </div>
+
+            </div>
+
+            <div class="jobboldal">  
+                <div class="brand">
+                    <div>NAGY GYÖRGY JÁNOS</div>
+                </div> 
+                
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(képek/modellezés.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="képek/dailysmarty.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Imádom amikor a tervek testet öltenek.Legalábbis majdnem...
+                        </div>
+                    </div>
+                </div>  
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(képek/tervezés.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="képek/dailysmarty.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Ami mindent megelőz, az alapos tervezés.
+                        </div>
+                    </div>
+                </div> 
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(képek/programozás.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="képek/dailysmarty.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Vonzanak a küldönböző programnyelvek, és a bennük rejlő lehetőségek.
+                        </div>
+                    </div>
+                </div> 
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(képek/chalistenics.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="képek/open-devos.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Csakúgy mint az elmét, a testet is fejleszteni kell.
+                        </div>
+                    </div>
+                </div> 
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(képek/kajak.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="képek/open-devos.png">
+                        </div>
+
+                        <div class="subtitle">
+                            A kedvenc vízi sportom az kajakozás.
+                        </div>
+                    </div>
+                </div> 
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(képek/röpi.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="képek/open-devos.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Örök kedvencem a sportok terén a röpi.
+                        </div>
+                    </div>
+                </div> 
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(képek/állatok.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="képek/shop-hacker.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Egyik hobbim a Tisza-tó élővilágának megismerése.
+                        </div>
+                    </div>
+                </div> 
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(képek/aquaglide.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="képek/shop-hacker.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Nyári munka,illetve szórakozás.A Tisza-tó vízijátszótere.
+                        </div>
+                    </div>
+                </div> 
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(képek/tiszató.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="képek/shop-hacker.png">
+                        </div>
+
+                        <div class="subtitle">
+                            A Tisza-tó mellett élek.Csodaszép hely.
+                        </div>
+                    </div>
+                </div> 
+
+
+            </div>
+        </div>
+
+    </div>  
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        } )
+        portfolioItem.addEventListener('mouseout', () => {
+            
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        } )
+    })
+</script>
+</html>
